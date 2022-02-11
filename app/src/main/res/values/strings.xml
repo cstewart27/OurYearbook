@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Our Yearbook</string>
+    <string name="This_Is_Our_Yearbook">This Is Our Yearbook</string>
+    <string name="Chris_Yearbook">Chris\'s Yearbook</string>
+    <string name="Josiah_Yearbook">Josiah\'s Yearbook</string>
+    <string name="Will_Yearbook">Will\'s Yearbook</string>
+    <string name="batman_picture">batman_picture</string>
+    <string name="batman_is_the_best_superhero">Batman is the best superhero</string>
+    <string name="Change_Text_View">Change Text View</string>
+    <string name="Return_to_Dashboard">Return to Dashboard</string>
+    <string name="Graduation_Plan">Graduation Plan</string>
+    <string name="Fix_Resume">Fix Resume</string>
+    <string name="Apply_for_internships">Apply for internships</string>
+    <string name="Contact_Career_Center">Apply for internships</string>
+    <string name="Apply_for_jobs">Apply for Jobs</string>
+    <string name="Back">Back</string>
+
+
+
+</resources>
