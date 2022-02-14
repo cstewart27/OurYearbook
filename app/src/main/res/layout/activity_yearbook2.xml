@@ -6,14 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".Yearbook2">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="291dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/KilluaText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <Button
+        android:id="@+id/btnevent"
+        android:layout_width="150dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="10dp"
+        android:text="Change Text"
+        app:layout_constraintBottom_toTopOf="@+id/btnGraduate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KilluaText" />
+
+    <TextView
+        android:id="@+id/KilluaText"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="13dp"
+        android:background="#03A9F4"
+        android:text="Favorite Anime Character is Killua Zoldyck"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnevent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
     <Button
         android:id="@+id/yearbook2Btn1"
         android:layout_width="152dp"
         android:layout_height="87dp"
         android:layout_gravity="center|center_horizontal|top"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="43dp"
         android:text="@string/Return_to_Dashboard"
         android:textSize="15sp"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="392dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGraduate"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnGraduate"
+        android:layout_width="151dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="10dp"
+        android:text="Graduation Plan"
+        app:layout_constraintBottom_toTopOf="@+id/yearbook2Btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnevent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
