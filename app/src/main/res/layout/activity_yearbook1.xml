@@ -1,85 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Yearbook1">
 
-    <Button
-        android:id="@+id/yearbook1Btn2"
-        android:layout_width="152dp"
-        android:layout_height="87dp"
-        android:layout_gravity="center|center_horizontal|top"
-        android:layout_marginBottom="7dp"
-        android:text="@string/Return_to_Dashboard"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/yearbook1Btn3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="SpeakableTextPresentCheck" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/yearbook1Btn1"
-        android:layout_width="150dp"
-        android:layout_height="88dp"
-        android:layout_gravity="center|center_horizontal|top"
-        android:text="@string/Change_Text_View"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/yearbook1TextView1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.968"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/yearbook1Btn3"
-        android:layout_width="150dp"
-        android:layout_height="85dp"
-        android:layout_gravity="center|center_horizontal|top"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/Graduation_Plan"
-        android:textSize="14.5sp"
-        app:layout_constraintBottom_toTopOf="@+id/yearbook1Btn1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.941"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="215dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="@string/batman_picture"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dc___character___details___sidekick_standard___batman" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="291dp"
-        android:layout_height="325dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:contentDescription="@string/batman_picture"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dc___character___details___sidekick_standard___batman" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/yearbook1TextView1"
-        android:layout_width="225dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="#8BC34A"
-        android:text="@string/batman_is_the_best_superhero"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/yearbook1Btn2"
+            android:layout_width="152dp"
+            android:layout_height="87dp"
+            android:layout_gravity="center|center_horizontal|top"
+            android:layout_marginBottom="7dp"
+            android:text="@string/Return_to_Dashboard"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/yearbook1Btn3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/yearbook1Btn3"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center|center_horizontal|top"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/Graduation_Plan"
+            android:textSize="14.5sp"
+            app:layout_constraintBottom_toTopOf="@+id/yearbook1Btn1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.878"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/yearbook1Btn1"
+            android:layout_width="150dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center|center_horizontal|top"
+            android:text="@string/Change_Text_View"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/yearbook1TextView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.945"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/yearbook1TextView1"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:text="@string/batman_is_the_best_superhero"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
