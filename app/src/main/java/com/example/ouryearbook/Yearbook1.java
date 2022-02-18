@@ -22,7 +22,7 @@ public class Yearbook1 extends AppCompatActivity {
         Button yearbook1Btn3 = (Button) findViewById(R.id.yearbook1Btn3);
         ImageButton ImageBtn1 = (ImageButton) findViewById(R.id.ImageBtn1);
         TextView yearbook1TextView1 = (TextView) findViewById(R.id.yearbook1TextView1);
-        Uri LegoBatman = Uri.parse("app/src/main/res/drawable/dc___character___details___sidekick_standard___batman.jpeg");
+        Uri LegoBatman = Uri.parse("app/src/main/res/drawable/legobatman.jpeg");
         yearbook1Btn1.setOnClickListener(new View.OnClickListener() {
             @Override
                 public void onClick (View v){

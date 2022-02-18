@@ -27,7 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dc___character___details___sidekick_standard___batman" />
+            app:srcCompat="@drawable/legobatman" />
 
         <Space
             android:layout_width="wrap_content"
