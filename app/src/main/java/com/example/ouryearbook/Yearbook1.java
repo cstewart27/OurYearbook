@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Yearbook1 extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class Yearbook1 extends AppCompatActivity {
         Button yearbook1Btn1 = (Button) findViewById(R.id.yearbook1Btn1);
         Button yearbook1Btn2 = (Button) findViewById(R.id.yearbook1Btn2);
         Button yearbook1Btn3 = (Button) findViewById(R.id.yearbook1Btn3);
+        ImageButton ImageBtn1 = (ImageButton) findViewById(R.id.ImageBtn1);
         TextView yearbook1TextView1 = (TextView) findViewById(R.id.yearbook1TextView1);
 
         yearbook1Btn1.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +44,16 @@ public class Yearbook1 extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        ImageBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Intent.ACTION_SEND);
+                startActivity(Intent.createChooser(myIntent, "Share Using"));
+            }
+        });
+
+
 
 
 
