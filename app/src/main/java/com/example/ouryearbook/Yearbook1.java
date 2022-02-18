@@ -3,6 +3,7 @@ package com.example.ouryearbook;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,7 @@ public class Yearbook1 extends AppCompatActivity {
         Button yearbook1Btn3 = (Button) findViewById(R.id.yearbook1Btn3);
         ImageButton ImageBtn1 = (ImageButton) findViewById(R.id.ImageBtn1);
         TextView yearbook1TextView1 = (TextView) findViewById(R.id.yearbook1TextView1);
-
+        Uri LegoBatman = Uri.parse("app/src/main/res/drawable/dc___character___details___sidekick_standard___batman.jpeg");
         yearbook1Btn1.setOnClickListener(new View.OnClickListener() {
             @Override
                 public void onClick (View v){
@@ -48,8 +49,11 @@ public class Yearbook1 extends AppCompatActivity {
         ImageBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(Intent.ACTION_SEND);
-                startActivity(Intent.createChooser(myIntent, "Share Using"));
+                Intent myIntent = new Intent();
+                myIntent.setAction(Intent.ACTION_SEND);
+                myIntent.setType("image/jpeg");
+                myIntent.putExtra(Intent.EXTRA_STREAM, LegoBatman);
+                startActivity(Intent.createChooser(myIntent, "Share Image Using:"));
             }
         });
 
