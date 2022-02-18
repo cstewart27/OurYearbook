@@ -9,7 +9,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:layout_height="50dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -107,7 +107,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:layout_height="50dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -121,11 +121,23 @@
 
         <Button
             android:id="@+id/graduation1Btn1"
-            android:layout_width="1dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
             android:layout_weight="1"
             android:text="@string/Back"
             android:textSize="15sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/graduation1Btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:text="@string/Dashboard" />
 
         <Space
             android:layout_width="wrap_content"
@@ -136,30 +148,6 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/graduation1Btn2"
-            android:layout_width="1dp"
-            android:layout_height="53dp"
-            android:layout_weight="1"
-            android:text="@string/Return_to_Dashboard" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
