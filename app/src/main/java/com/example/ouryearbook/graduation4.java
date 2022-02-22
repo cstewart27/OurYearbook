@@ -17,7 +17,9 @@ public class graduation4<ResultActivity> extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            //replaced .activity_main with .activity_graduation4
+            //reason: fixes crash when clicking on the graduation plan button in yearbook4
+            setContentView(R.layout.activity_graduation4);
 
             btnotification = (Button)findViewById(R.id.btnotification);
             btnotification.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +28,19 @@ public class graduation4<ResultActivity> extends AppCompatActivity {
                     addNotification();
                 }
             });
+
+
+            //moved from outside oncreate to inside oncreate
+            Button yearbookdashboard1 = (Button) findViewById(R.id.btndashboard1);
+            yearbookdashboard1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v){
+                    Intent i=new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(i);
+                }
+            });
+
+
         }
 
         private void addNotification() {
@@ -45,17 +60,7 @@ public class graduation4<ResultActivity> extends AppCompatActivity {
         }
 
 
-    Button yearbookdashboard1 = (Button) findViewById(R.id.btndashboard1);
-        yearbookdashboard1.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v){
-            Intent i=new Intent(getApplicationContext(),MainActivity.class);
-            startActivity(i);
 
-
-        }
-
-    }
     }
 
 
