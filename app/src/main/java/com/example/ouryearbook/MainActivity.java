@@ -1,8 +1,10 @@
 package com.example.ouryearbook;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mainBtn4.setOnClickListener(new View.OnClickListener(){
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v){
                 Intent i = new Intent(getApplicationContext(),Yearbook4.class);
