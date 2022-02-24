@@ -21,7 +21,7 @@ public class graduation4<ResultActivity> extends AppCompatActivity {
             //reason: fixes crash when clicking on the graduation plan button in yearbook4
             setContentView(R.layout.activity_graduation4);
 
-            btnotification = (Button)findViewById(R.id.btnotification);
+            //btnotification = (Button)findViewById(R.id.btnotification);
             btnotification.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
