@@ -27,16 +27,10 @@
             android:name=".Yearbook4"
             android:exported="false" />
         <activity
-            android:name=".graduation3"
-            android:exported="false" />
-        <activity
             android:name=".graduation2"
             android:exported="false" />
         <activity
             android:name=".graduation1"
-            android:exported="false" />
-        <activity
-            android:name=".Yearbook3"
             android:exported="false" />
         <activity
             android:name=".Yearbook2"

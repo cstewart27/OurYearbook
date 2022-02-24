@@ -59,8 +59,6 @@ public class graduation4<ResultActivity> extends AppCompatActivity {
             manager.notify(0, builder.build());
         }
 
-
-
     }
 
 
