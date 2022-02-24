@@ -13,7 +13,7 @@ import androidx.core.app.NotificationCompat;
 
 public class graduation4<ResultActivity> extends AppCompatActivity {
 
-        Button btnotification;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -21,13 +21,7 @@ public class graduation4<ResultActivity> extends AppCompatActivity {
             //reason: fixes crash when clicking on the graduation plan button in yearbook4
             setContentView(R.layout.activity_graduation4);
 
-            btnotification = (Button)findViewById(R.id.btnotification);
-            btnotification.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    addNotification();
-                }
-            });
+
 
 
             //moved from outside oncreate to inside oncreate
@@ -43,21 +37,7 @@ public class graduation4<ResultActivity> extends AppCompatActivity {
 
         }
 
-        private void addNotification() {
-            NotificationCompat.Builder builder =
-                    new NotificationCompat.Builder(this)
-                            .setContentTitle("Notifications Example")
-                            .setContentText("This is a test notification");
 
-            Intent notificationIntent = new Intent(this, MainActivity.class);
-            PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
-                    PendingIntent.FLAG_UPDATE_CURRENT);
-            builder.setContentIntent(contentIntent);
-
-            // Add as notification
-            NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-            manager.notify(0, builder.build());
-        }
 
 
 
