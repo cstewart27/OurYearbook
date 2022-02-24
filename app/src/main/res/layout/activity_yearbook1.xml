@@ -27,7 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dc___character___details___sidekick_standard___batman" />
+            app:srcCompat="@drawable/legobatman" />
 
         <Space
             android:layout_width="wrap_content"
@@ -137,8 +137,26 @@
             android:layout_width="150dp"
             android:layout_height="88dp"
             android:layout_gravity="center|center_horizontal|top"
-            android:text="@string/Change_Text_View"
-            android:textSize="16sp"
+            android:text="@string/Change_Text"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/yearbook1TextView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.945"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/yearbook1Btn4"
+            android:layout_width="150dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center|center_horizontal|top"
+            android:text="@string/Notification"
+            android:textSize="15sp"
             app:layout_constraintBottom_toTopOf="@+id/yearbook1TextView1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"

@@ -20,5 +20,13 @@
     <string name="Dashboard">Dashboard</string>
     <string name="Carlos_Yearbook">Carlos\'s Yearbook</string>
     <string name="Share_Button">Share Button</string>
+    <string name="fourth_Network">4th Network</string>
+    <string name="first_work">1st Work on Resume</string>
+    <string name="second_work">2nd Work on Portfolio</string>
+    <string name="Internship">3rd Internship</string>
+    <string name="fifth_Apply">5th Apply</string>
+    <string name="Notification">Notification</string>
+
+
 
 </resources>
