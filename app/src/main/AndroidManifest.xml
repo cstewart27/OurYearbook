@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ouryearbook">
-    //enables internet access
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <supports-screens
         android:largeScreens="true"
         android:normalScreens="true"
@@ -17,6 +18,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OurYearbook">
+        <activity
+            android:name=".graduation3"
+            android:exported="false" />
+        <activity
+            android:name=".Yearbook3"
+            android:exported="false" />
         <activity
             android:name=".SendNotification"
             android:exported="false" />
@@ -48,7 +55,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".ReminderBroadcast"/>
+        <receiver android:name=".ReminderBroadcast" />
     </application>
 
 </manifest>

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button mainBtn1 = (Button) findViewById(R.id.mainBtn1);
         Button mainBtn2 = (Button) findViewById(R.id.mainBtn2);
+        Button mainBtn3 = (Button) findViewById(R.id.mainBtn3);
         Button mainBtn4 = (Button) findViewById(R.id.mainBtn4);
 
         mainBtn1.setOnClickListener(new View.OnClickListener(){
@@ -36,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mainBtn3.setOnClickListener(new View.OnClickListener(){
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(getApplicationContext(),Yearbook3.class);
+                startActivity(i);
+            }
+        });
+
         mainBtn4.setOnClickListener(new View.OnClickListener(){
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
@@ -44,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
 
     }
 }

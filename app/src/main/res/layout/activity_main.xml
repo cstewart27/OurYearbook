@@ -93,6 +93,20 @@
             android:layout_weight="1" />
 
         <Button
+            android:id="@+id/mainBtn3"
+            android:layout_width="170dp"
+            android:layout_height="94dp"
+            android:layout_weight="1"
+            android:text="@string/Will_Yearbook"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
             android:id="@+id/mainBtn4"
             android:layout_width="175dp"
             android:layout_height="94dp"
